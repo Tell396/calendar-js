@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,300;1,600&family=Neonderthaw&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=The+Nautigal:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import 'fonts';
+
+$anton: 'Anton', sans-serif;
+$mulish: 'Mulish', sans-serif;
+$w-sans: 'Work Sans', sans-serif;
+
+// Строчные
+$roboto: 'Roboto', sans-serif;
+$poppins: 'Poppins', sans-serif;
+$quicksand: 'Quicksand', sans-serif;
+
+// Прописные
+$nautigal: 'The Nautigal', cursive;
+$neonderthaw: 'Neonderthaw', cursive;
+$dancing-script: 'Dancing Script', cursive;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $roboto;
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+main {
+  
+  
+  .calendar {
+    padding: 20px 40px;
+
+    .calendar-header {
+      border: none;
+      
+      
+      table {
+        width: 65%;
+        border-radius: 2.5px;
+
+
+        .prev {
+        }
+
+        .year-title {
+          font-family: $poppins;
+          font-size: 2.5em;
+        }
+
+        .next {
+        }
+      }
+    }
+
+    .months-container {
+      justify-content: center;
+      gap: 40px;
+      
+      .month-container {
+        background-color: #fff;
+        padding: 20px;
+        min-width: 280px;
+        box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.1);
+
+        .month {
+          
+          thead {
+
+
+            tr {
+
+
+              .month-title {
+                font-family: $dancing-script;
+                color: #676487;
+                font-size: 2.5em;
+                font-weight: 200;
+              }
+
+              .day-header {
+                font-family: $quicksand;
+                color: #7b8188;
+              }
+
+              .day {
+                color: #7b8188;
+                
+                .day-content:hover {
+                  background-color: red;
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

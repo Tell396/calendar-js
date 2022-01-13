@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,300;1,600&family=Neonderthaw&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=The+Nautigal:wght@400;700&family=Work+Sans:wght@300;400;500;600&display=swap");
+@font-face {
+  font-family: Pushster;
+  font-display: swap;
+  src: url("../fonts/Pushster-Regular.woff2") format("woff2"), url("../fonts/Pushster-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(0, 0, 0, 0.103);
+}
+
+main .calendar {
+  padding: 20px 40px;
+}
+main .calendar .calendar-header {
+  border: none;
+}
+main .calendar .calendar-header table {
+  width: 65%;
+  border-radius: 2.5px;
+}
+main .calendar .calendar-header table .year-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+}
+main .calendar .months-container {
+  justify-content: center;
+  gap: 40px;
+}
+main .calendar .months-container .month-container {
+  background-color: #fff;
+  padding: 20px;
+  min-width: 280px;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.1);
+}
+main .calendar .months-container .month-container .month thead tr .month-title {
+  font-family: "Dancing Script", cursive;
+  color: #676487;
+  font-size: 2.5em;
+  font-weight: 200;
+}
+main .calendar .months-container .month-container .month thead tr .day-header {
+  font-family: "Quicksand", sans-serif;
+  color: #7b8188;
+}
+main .calendar .months-container .month-container .month thead tr .day {
+  color: #7b8188;
+}
+main .calendar .months-container .month-container .month thead tr .day .day-content:hover {
+  background-color: red;
+}
